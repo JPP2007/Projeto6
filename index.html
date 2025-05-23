@@ -8,6 +8,7 @@
     <title>Login</title>
 </head>
 <body>
+
     <main id="container">
         <div class="video-container">
             <video autoplay loop muted>
@@ -20,31 +21,25 @@
                 <h1>Login</h1>
             </header>
             <form id="form-login">
-                <article class="form-group">
-                    <label for="usuario">Usuário</label>
-                    <input type="text" id="usuario" name="usuario" required>
-                </article>
-                <article class="form-group">
-                    <label for="senha">Senha</label>
-                    <input type="password" id="senha" name="senha" required>
-                </article>
-                <button type="submit" id="btnEntrar">Entrar</button>
-                <button id="btnTrocar">Trocar</button>
-                <div id="mensagem" class="mensagem"></div>
+                    <article class="form-group">
+                        <label for="usuario">Usuário</label>
+                        <input type="text" id="usuario" name="usuario" required/>
+                    </article>
+
+                    <article class="form-group">
+                        <label for="senha">Senha</label>
+                        <input type="password" id="senha" name="senha" required/>
+                    </article>
+
+                    <button type="submit" id="btnEntrar">Entrar</button>
+                    <button id="btnTrocar">Trocar</button>
+                    <div id="mensagem" class="mensagem"></div>
             </form>
-
         </div>
+
     </main>
-
-
-
-
-
-
-
 
     <!-- JS EXTERNO -->
     <script src="./src/js/script.js"></script>
-    
 </body>
 </html>
