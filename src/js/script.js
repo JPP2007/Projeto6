@@ -34,6 +34,8 @@ document.addEventListener('DOMContentLoaded',()=>{
             const password =document.getElementById('senha').value;
     
             if(username == "Admin" && password =="123456"){
+
+                let token = Math.random().toString(16).substring(2);
     
                 window.location="teste.html";
     
@@ -43,7 +45,7 @@ document.addEventListener('DOMContentLoaded',()=>{
     
                 //PEGANDO O USUARIO E A SENHA E GRAVANDO NO LOCALSTORAGE
                 localStorage.setItem('usuario',username);
-                localStorage.setItem('senha',password)
+                localStorage.setItem('senha',token)
                 }
             }
             else{
